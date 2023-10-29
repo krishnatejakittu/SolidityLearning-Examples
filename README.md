@@ -7,6 +7,11 @@ In this repository, you should be able to learn solidity coding for smart contra
 
 **2.** StorageFactory Contract
 
+**3.** FundMe Contract
+
+**********************************************************************************************************************************************************************************
+
+**1.**
 ## SimpleStorage Contract
 
 The `SimpleStorage` contract is a basic example of a smart contract written in Solidity, designed to run on the Ethereum blockchain. It demonstrates fundamental concepts of Ethereum smart contracts, such as state variables, structs, arrays, mappings, and functions.
@@ -84,3 +89,58 @@ The contract is released under the GNU General Public License v3.0, as indicated
 
 ### Conclusion
 The `StorageFactory` contract provides a practical example of contract interaction, inheritance, and array manipulation in Solidity. It shows how to manage and interact with multiple contract instances, making it a useful reference for developers looking to understand advanced Solidity concepts and patterns.
+
+
+**********************************************************************************************************************************************************************************
+
+**3.**
+# FundMe Smart Contract
+
+## Overview
+The FundMe smart contract is a crowdfunding application built on the Ethereum blockchain, enabling users to financially support the project by sending Ether (ETH). The contract ensures that the amount of ETH sent by each user meets a specified minimum requirement in USD, making use of Chainlink's price feed to fetch the current ETH/USD exchange rate.
+
+## Key Features
+
+### SafeMath for Arithmetic Operations
+The contract employs `SafeMathChainlink` to perform safe arithmetic operations, safeguarding it from common vulnerabilities like overflow and underflow.
+
+### Ownership Management
+The address that deploys the contract is designated as the owner. Certain functionalities, such as withdrawing funds, are restricted to the owner, providing an additional layer of security and control.
+
+### Minimum Funding Requirement
+Users are required to send a minimum amount of ETH, determined by its equivalent value in USD. This ensures that all contributions meet the project's financial requirements.
+
+### Real-Time ETH/USD Exchange Rate
+The contract interacts with Chainlink’s AggregatorV3Interface to fetch the real-time exchange rate between ETH and USD, ensuring the minimum funding requirement is always up to date.
+
+## Functions
+
+### fund
+Allows users to send ETH to the contract, provided that the USD equivalent meets or exceeds the minimum requirement. The sender’s address and amount sent are recorded.
+
+### getVersion
+Returns the version of the Chainlink price feed being used.
+
+### getPrice
+Fetches the current ETH price in USD.
+
+### getConversionRate
+Calculates the USD equivalent of a given amount of ETH.
+
+### withdraw
+Enables the owner to withdraw all funds from the contract and resets the funded amount for all contributors to zero.
+
+## Modifiers
+
+### onlyOwner
+Ensures that certain functions can only be called by the owner of the contract.
+
+## Constructor
+Sets the contract's deployer as the owner.
+
+## Usage in Decentralized Crowdfunding
+This smart contract represents a fundamental building block for decentralized crowdfunding applications, ensuring transparency, security, and verifiability of transactions on the Ethereum blockchain.
+
+**********************************************************************************************************************************************************************************
+
+
