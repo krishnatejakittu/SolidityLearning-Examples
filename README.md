@@ -10,6 +10,7 @@ In this repository, you should be able to learn solidity coding for smart contra
 **3.** FundMe Contract
 
 **So the first Three Exercises are done in Remix IDE, now as we gained some knowledge let's take it to the next step**
+
 **4.** Web3_py_simple_storage using VS Code, Web3 and Ganache
 **********************************************************************************************************************************************************************************
 
