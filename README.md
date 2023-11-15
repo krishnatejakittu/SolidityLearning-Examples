@@ -9,6 +9,8 @@ In this repository, you should be able to learn solidity coding for smart contra
 
 **3.** FundMe Contract
 
+**So the first Three Exercises are done in Remix IDE, now as we gained some knowledge let's take it to the next step**
+
 **********************************************************************************************************************************************************************************
 
 **1.**
@@ -142,5 +144,22 @@ Sets the contract's deployer as the owner.
 This smart contract represents a fundamental building block for decentralized crowdfunding applications, ensuring transparency, security, and verifiability of transactions on the Ethereum blockchain.
 
 **********************************************************************************************************************************************************************************
-
-
+**So the first Three Exercises are done in Remix IDE, now as we gained some knowledge let's take it to the next step**
+1. Download VS Code
+2. Add extensions Python, Solidity
+3. Install Python
+**********************************************************************************************************************************************************************************
+**4.** In this exercise we will do the same SimpleStorage Contract that we did in the first exercise but in our local IDE.
+Follow the steps:
+1. create a dir using mkdir in your system as web3_py_simple_storage
+2. Then create a file SimpleStorage.sol and copy the contract we used in the first exercise
+3. Ok so now we have a folder with contract but how are we going to deploy it? so that's where we use python
+4. Create a file called deploy.py
+5. In remix if you notice every time we save it compiles automatically, so to compile here we need to install pip install py-solc-x
+6. Doing so now if you observe in deploy.py file we use compiled_sol = compile_standard i.e. where we are declaring compiler-related info. If you just print(compiled_sol) and run python deploy.py, you will see a lot of low-level byte code.
+7. So to deploy our contract we need bytecode, abi so if you follow my code in deploy.py you will see how it can be read in.
+8. So now we need a blockchain where we can deploy our contract to check, In the remix we have Java VM accounts to test so here we need to use Ganache so download it, it will provide us with fake accounts with ethers in them which we will use as our local blockchain to test our smart contracts
+9. After Downloading Ganache just click quickstart it will automatically create a local blockchain and give you accounts to play with
+10. Install web3 using pip install web3
+11. In deploy.py for connecting to ganache change the http provider with your own which is displayed on the top of ganache, edit the address and private key with your own from ganache
+12. 
