@@ -149,7 +149,8 @@ This smart contract represents a fundamental building block for decentralized cr
 2. Add extensions Python, Solidity
 3. Install Python
 **********************************************************************************************************************************************************************************
-**4.** In this exercise we will do the same SimpleStorage Contract that we did in the first exercise but in our local IDE.
+**4.** 
+In this exercise we will do the same SimpleStorage Contract that we did in the first exercise but in our local IDE.
 Follow the steps:
 1. create a dir using mkdir in your system as web3_py_simple_storage
 2. Then create a file SimpleStorage.sol and copy the contract we used in the first exercise
@@ -161,5 +162,4 @@ Follow the steps:
 8. So now we need a blockchain where we can deploy our contract to check, In the remix we have Java VM accounts to test so here we need to use Ganache so download it, it will provide us with fake accounts with ethers in them which we will use as our local blockchain to test our smart contracts
 9. After Downloading Ganache just click quickstart it will automatically create a local blockchain and give you accounts to play with
 10. Install web3 using pip install web3
-11. In deploy.py for connecting to ganache change the http provider with your own which is displayed on the top of ganache, edit the address and private key with your own from ganache
-12. 
+11. In deploy.py for connecting to ganache change the http provider with your own which is displayed on the top of the ganache, and edit the address and private key with your own from ganache
