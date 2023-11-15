@@ -10,7 +10,7 @@ In this repository, you should be able to learn solidity coding for smart contra
 **3.** FundMe Contract
 
 **So the first Three Exercises are done in Remix IDE, now as we gained some knowledge let's take it to the next step**
-
+**4.** Web3_py_simple_storage using VS Code, Web3 and Ganache
 **********************************************************************************************************************************************************************************
 
 **1.**
@@ -149,7 +149,10 @@ This smart contract represents a fundamental building block for decentralized cr
 2. Add extensions Python, Solidity
 3. Install Python
 **********************************************************************************************************************************************************************************
+
 **4.** 
+# Web3 py Simple Storage
+
 In this exercise we will do the same SimpleStorage Contract that we did in the first exercise but in our local IDE.
 Follow the steps:
 1. create a dir using mkdir in your system as web3_py_simple_storage
@@ -163,3 +166,4 @@ Follow the steps:
 9. After Downloading Ganache just click quickstart it will automatically create a local blockchain and give you accounts to play with
 10. Install web3 using pip install web3
 11. In deploy.py for connecting to ganache change the http provider with your own which is displayed on the top of the ganache, and edit the address and private key with your own from ganache
+12. For safe use of private key use env variables
