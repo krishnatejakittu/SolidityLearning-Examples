@@ -1,6 +1,8 @@
 # SolidityLearning-Examples
 In this repository, you should be able to learn solidity coding for smart contracts from basic to advanced level use of concepts
 
+**In Progress**
+
 **Table of Contents**
 
 **1.** SimpleStorage Contract
